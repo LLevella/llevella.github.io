@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Курсовая работа</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Merriweather:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <style>
+* {
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1020px;
+  /* width: 1020px; */
+  background-color: #f8eedf;
+}
+.container{
+  /* width: 952px; */
+  max-width: 952px;
+  min-width: calc( 100% - 68px );
+  margin: 0 auto;
+  /* font-size: 0px;
+  line-height: 0px; */
+}
+
+header h1 a, h2 {
+  font-family: 'Merriweather', serif;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.featured .box:nth-child(2) h2,
+.featured .map li,
+.featured .map:after,
+.blog .post .info time,
+.blog .post .info p,
+.blog .box-button .button,
+aside .box-tab label,
+.big-footer .box-button .button,
+.big-footer .box-input input,
+.big-footer .box-input textarea,
+.small-footer span,
+.small-footer .site-menu a{
+  display: inline-block;
+  font-family: 'Merriweather', serif;
+  line-height: normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: none;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+}
+p, a, span, nav .box input{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  text-decoration: none;
+  color:#ffffff;
+}
+a, span{
+  font-weight: 600;
+}
+a:hover{
+  text-decoration: underline;
+}
+@-moz-document url-prefix() {
+  .featured p {
+    letter-spacing: 0.2px;
+    }
+}
+nav a, nav span,
+.featured .box-button .button{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.blog h2,
+aside h2,
+.big-footer h2{
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  background: linear-gradient(0deg,#257385, #3096a4), #3da2b4;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), linear-gradient(180deg, #ffc05e, #eeaf4d);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+header .box {
+  display: inline-block;
+  vertical-align: middle;
+  /* width: calc( 100% - 211px ); */
+  max-width: 738px;
+  min-width: calc( 100% - 211px );
+  text-align: left;
+}
+header .box h1, header .box a{
+  font-size: 26px;
+  letter-spacing: 3.375px;
+  color:#ffffff;
+}
+header .box-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 40px;
+  background: url("https://image.ibb.co/ibSLe7/separator_min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .communications {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .communications li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 23px;
+}
+header .communications li:first-child{
+  margin-left: 18px;
+}
+header .communications li a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 0px;
+  line-height: 0px;
+  font-family: a,a,a;
+  background: url("https://image.ibb.co/fwyhsS/sprites_min.png");
+  background-repeat: no-repeat;
+}
+header .communications li:nth-child(1) a{
+  background-position: 0 0;
+}
+header .communications li:nth-child(2) a{
+  background-position: -50px 0;
+}
+header .communications li:nth-child(3) a{
+   background-position: -99px 0;
+}
+header .communications li:nth-child(4) a{
+  padding-left: 25px;
+  background-position: -149px 0;
+}
+
+nav {
+  width: 100%;
+  background: #40312a;
+}
+nav .container{
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+nav .site-menu {
+ display: inline-block;
+ /* width: calc( 100% - 270px ); */
+  max-width: 682px;
+  min-width: calc( 100% - 270px );
+ vertical-align: top;
+}
+nav .site-menu li {
+  display: inline-block;
+  margin-left: 21px;
+}
+nav .site-menu li:first-child,
+nav .site-menu li:first-child a {
+  margin-left: 0px;
+  color:#2c8897;
+}
+
+nav .box {
+  position: relative;
+  display: inline-block;
+  width: 270px;
+  height: 27px;
+}
+nav .box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  font-weight: bold;
+}
+nav .box input {
+  width: 191px;
+  height: 27px;
+  padding-left: 5px;
+  padding-right: 30px;
+  font-size: 10px;
+  line-height: normal;
+  border: none;
+  outline: none;
+  background-color: #2c8797;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.2),  rgba(255,255,255,0.2));
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8);
+  border-radius: 4px;
+ }
+ nav .box .search-field {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+nav .box button {
+  width: 18px;
+  height: 16px;
+  border-width: 0;
+  outline: none;
+  background: transparent;
+  background-image: url("https://image.ibb.co/n8z0e7/mg_glass_min.png");
+}
+nav .box .box-button {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  bottom: 0;
+  margin: auto;
+}
+nav .box button:hover{
+  cursor: pointer;
+}
+nav .box-button:active{
+  border-width: 1px;
+  border-image: radial-gradient(#40312a, #2c8797);
+  border-image-width: 1px;
+  border-image-slice: 1;
+}
+
+.featured {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #deccaa;
+  background-image: url("https://image.ibb.co/eXytz7/bg_features_min.png");
+  border-bottom-width: 4px;
+}
+.featured .container {
+  position: relative;
+  background: repeating-linear-gradient(0deg,#247184, #2f92a2 50px);
+  border-radius: 8px;
+}
+.featured .box:first-child {
+  padding-top: 29px;
+  padding-left: 40px;
+  background-color: #40312a;
+  background-image: url("https://preview.ibb.co/e7aj6n/noise_features_min.png");
+  border-radius: 8px;
+}
+.featured .box-text,
+.featured .box-button {
+ /* width: 500px; */
+  max-width: 500px;
+  min-width: calc( 100% - 452px );
+  padding-bottom: 41px;
+}
+.featured .box-text h2 {
+  padding-bottom: 19px;
+  font-size: 23px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  color: #3da2b4;
+}
+.featured .box-text p{
+  text-align: left;
+}
+@-moz-document url-prefix() {
+  .featured .box-text p {
+    letter-spacing: -0.2px;
+  }
+}
+.featured .box-button .button {
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  text-align: center;
+  padding-top: 14px;
+  margin-right: 30px;
+  letter-spacing: 0.6px;
+}
+.featured .box-button .button,
+.big-footer .box-button .button {
+  border-width: 1px;
+  border-radius: 4px;
+  outline: none;
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), linear-gradient(0deg, #ffc05e, #eeaf4d);
+  background-repeat: no-repeat;
+  border-image: linear-gradient(180deg,  #ffc05e, #eeaf4d);
+  border-image-width: 1px;
+  border-image-slice: 1;
+}
+.featured .box-button .button:hover,
+.big-footer .box-button .button:hover {
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), radial-gradient(#40312a, #eeaf4d);
+  background-repeat: no-repeat;
+  outline-color: #eeaf4d;
+  outline-width: 1px;
+  outline-offset: 0px;
+  cursor: pointer;
+}
+.featured .box-button .button:active,
+.big-footer .box-button .button:active {
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), radial-gradient(#eeaf4d, #40312a);
+  background-repeat: no-repeat;
+  outline-color: #40312a;
+  outline-width: 1px;
+  outline-offset: 0px;
+}
+.featured .box:nth-child(2){
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-bottom: 11px;
+}
+.featured .map{
+  display: inline-block;
+}
+.featured .map li {
+  padding-left: 4px;
+}
+.featured .map li:first-child
+{
+  padding-left: 5px;
+}
+.featured .map li:nth-child(n+2):before {
+  content: '>';
+  padding-right: 3px;
+}
+.featured .map li:last-of-type{
+  position: relative;
+}
+.featured .map li:last-of-type::after {
+  content: '..';
+}
+.featured .map .cursor{
+  content:'';
+  position: absolute;
+  right: -12px;
+  left: 12px;
+  bottom: -20px;
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 0px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 18px solid #deccaa;
+}
+.featured .box-image:nth-last-child(2) {
+  position: absolute;
+  bottom: 30px;
+  right: 42px;
+  width: 230px;
+  height: 220px;
+  background: url("https://image.ibb.co/fiAWK7/pre_image_sec_min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 9px 7px rgba(0,0,0,0.33);
+}
+.featured .box-image:nth-last-child(1) {
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  width: 230px;
+  height: 250px;
+  background: url("https://image.ibb.co/kNvbmn/pre_image_main_min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 9px 7px rgba(0,0,0,0.33);
+}
+.featured +.separator {
+  width: 100%;
+  height: 4px;
+  background-color: #deccaa;
+  border-bottom: 2px solid #bba67b;
+  border-top: 1px solid #bba67b;
+}
+.blog {
+  display: inline-block;
+  /* width: calc( 100% - 386px ); */
+  max-width: 634px;
+  min-width: calc( 100% - 386px );
+}
+.blog .container{
+  /* width: 568px; */
+  max-width: 568px;
+  min-width: calc( 100% - 66px );
+  padding-bottom: 50px;
+  vertical-align: top;
+  padding-top:  45px;
+  padding-right: 16px;
+}
+.blog h2 {
+  padding-bottom: 12px;
+  }
+.blog h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color:#40312a;
+  padding-bottom: 6px;
+}
+.blog .post .info p, .blog .post .info time {
+  padding-right: 4px;
+  letter-spacing: 0.55px;
+  font-style: italic;
+  font-weight: bold;
+  color:#ce953c;
+  padding-bottom: 12px;
+}
+.blog .post .info time::after {
+  content: '|';
+  padding-left: 4px;
+}
+.blog .post .excerpt img {
+  display: block;
+  width: 550px;
+  height: 140px;
+  border-radius: 6px;
+}
+.excerpt p {
+  color: black;
+}
+.blog .post .excerpt p {
+  padding-top: 10px;
+  padding-bottom: 26px;
+  padding-right: 42px;
+  letter-spacing: 0px;
+}
+@-moz-document url-prefix() {
+  .blog .post .excerpt p {
+    padding-top: 6px;
+    letter-spacing: -0.2px;
+    padding-bottom: 28px;
+  }
+}
+.excerpt a {
+  color: #247184;
+  letter-spacing: -0.5px;
+  padding-left: 4px;
+  /* text-decoration: none; */
+}
+.blog .box-button{
+  padding-top: 12px;
+  text-align: right;
+}
+
+.blog .box-button .button {
+  display: inline-block;
+  width: 110px;
+  height: 31px;
+  padding-top: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #b2988d;
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), linear-gradient(0deg, #40312a, #53443d);
+  background-repeat: no-repeat;
+}
+.blog .box-button .button:hover {
+  cursor: pointer;
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), radial-gradient(#ffc05e,#53443d);
+  background-repeat: no-repeat;
+  outline-color: #53443d;
+  outline-width: 1px;
+  outline-offset: 0px;
+}
+.blog .box-button .button:active{
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), radial-gradient(#53443d, #ffc05e);
+  background-repeat: no-repeat;
+  outline-color: #ffc05e;
+  outline-width: 1px;
+  outline-offset: 0px;
+}
+aside {
+  display: inline-block;
+  width: 386px;
+  vertical-align: top;
+  padding-left: 1px;
+  border:0px;
+  border-left: 1px solid #fff7ea;
+  background: linear-gradient(0deg, #f8eedf, #dfcdb2);
+}
+aside .back-box {
+  display: inline-block;
+  float: left;
+  /* width: 384px; */
+  max-width:  384px;
+  min-width: calc( 100% - 2px );
+  padding-top:  51px;
+  vertical-align: top;
+  background: linear-gradient(0deg,  #f8eedf, #eddcc5);
+}
+
+@-moz-document url-prefix() {
+  aside .back-box {
+    padding-top:  48px;
+  }
+}
+aside .container{
+  /* width: 316px; */
+  max-width: 316px;
+  min-width: calc( 100% - 68px );
+  margin: 0 auto;
+  padding-left: 4px;
+}
+aside .box-tab {
+  border-radius: 6px;
+  background-color: #40312a;
+}
+aside .box-tab > div,
+aside .box-tab input {
+  display: none;
+}
+aside .box-tab label {
+  display: inline-block;
+  width: 33.33333%;
+  padding: 12px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  border-bottom: 1px outset #257386;
+}
+aside .box-tab label:hover{
+  background: radial-gradient(ellipse, #40312a, #134a56);
+}
+aside .box-tab input:checked + label:hover{
+  background: #3096a4;
+}
+aside .box-tab input:checked + label {
+  padding-top: 14px;
+  background-color: #3096a4;
+  border-radius: 6px 6px 0 0;
+  border-right:  1px outset #134a56;
+  border-left:  1px outset #134a56;
+  border-bottom: 1px solid #3096a4;
+}
+aside .box-tab input:checked+label:first-of-type{
+  border-radius: 6px 0 0 0;
+  border-left: 0;
+}
+aside .box-tab input:checked+label:last-of-type{
+  border-radius: 0 6px 0 0;
+  border-right:0;
+}
+aside .box-tab > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+aside .box-tab > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+aside .box-tab > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+   display: block;
+   height: 156px;
+   overflow: auto;
+   background: linear-gradient(0deg,#257487, #3096a4);
+   border-radius: 0 0 6px 6px;
+}
+aside .box-tab > div::-webkit-scrollbar{
+  width: 6px;
+  background-color: #3196af;
+}
+aside .box-tab > div::-webkit-scrollbar-thumb
+{
+  background-color: #40312a;
+}
+aside .box-tab > div > p {
+  padding: 10px 14px 12px 14px;
+  border-top: 1px solid #3196af;
+  border-bottom: 1px solid #134a56;
+}
+@-moz-document url-prefix() {
+  aside .box-tab > div > p {
+    letter-spacing: -0.2px;
+    padding-bottom: 10px;
+  }
+}
+aside .box-tab > div > p:first-child{
+  padding-top: 13px;
+  border-top: 0;
+}
+aside .box-tab > div > p:last-child{
+  border-bottom: 0;
+  /* padding-bottom: 48px; */
+}
+aside h2 {
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+aside .excerpt img{
+  display: block;
+  height: 100px;
+  border: 5px solid #febf5d;
+}
+aside .excerpt p {
+  padding-top: 15px;
+  letter-spacing: 0px;
+  padding-bottom: 10px;
+  padding-right: 4px;
+  letter-spacing: 0.01px;
+}
+@-moz-document url-prefix() {
+  aside .back-box .excerpt p {
+    letter-spacing: -0.2px;
+    line-height: 18px;
+    }
+}
+aside .excerpt a {
+  padding-left: 0px;
+  letter-spacing: -0.8px;
+}
+.sponsors .separator{
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 94px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border:0;
+  background: url("https://image.ibb.co/mahmK7/sponsors_separator_min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sponsors .box-image{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 138px;
+  height: 138px;
+  background-color: black;
+  border: 5px solid #febf5d;
+}
+.sponsors .box-image:first-of-type{
+  padding-top: 10px;
+}
+.sponsors .box-image:last-of-type {
+  padding-top: 15px;
+}
+.sponsors .box-image:hover,
+.big-footer .box-image img:hover,
+aside .excerpt img:hover{
+  border-color: #40312a;
+}
+aside + .separator {
+  width: 100%;
+  height: 2px;
+  border-top: 1px solid #3a2c25;
+  border-bottom: 1px solid #b2988d;
+}
+.big-footer {
+  width: 100%;
+  background: #3a2c25;
+
+}
+.big-footer .container{
+  padding-top: 43px;
+  padding-bottom: 49px;
+}
+.big-footer .box{
+  display: inline-block;
+  width: 33.333333%;
+  vertical-align: top;
+}
+.big-footer .box:first-of-type{
+  padding-right: 40px;
+}
+.big-footer h2{
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+.big-footer .box-input{
+  width: 100%;
+  padding-right: 4px;
+  color: #247184;
+}
+.big-footer .box-input input,
+.big-footer .box-input textarea,
+.big-footer .box-input input::placeholder,
+.big-footer .box-input textarea::placeholder {
+  font-size: 11px;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #247184;
+}
+.big-footer .box-input input,
+.big-footer .box-input textarea{
+  display: inline-block;
+  padding: 13px;
+  margin-bottom: 13px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  background-color:#f8eedf;
+}
+.big-footer .box-input input:first-of-type{
+  width: 113px;
+  height: 38px;
+  margin-right: 7px;
+}
+.big-footer .box-input input:nth-of-type(2){
+  width: calc( 100% - 113px - 7px );
+  height: 38px;
+}
+.big-footer .box-input input:last-of-type {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 0px;
+}
+.big-footer .box-input textarea {
+  width: 100%;
+  height: 110px;
+  resize: none;
+}
+.big-footer .box-button{
+  text-align: right;
+  padding-right: 4px;
+}
+.big-footer .box:first-of-type .box-button{
+  padding-top: 32px;
+}
+.big-footer .box-button .button{
+  width: 112px;
+  height: 32px;
+  font-size: 15px;
+  letter-spacing: 0.57px;
+  text-align: center;
+  border: 1px solid #febf5d;
+  border-radius:2px;
+}
+
+.big-footer .box:first-of-type .box-button .button{
+  letter-spacing: 1.5px;
+}
+.big-footer .box:nth-of-type(n+2) .button{
+  padding-top: 8px;
+}
+.big-footer .box-image img{
+  width: 125px;
+  height: 95px;
+  border: 3px solid #febf5d;
+}
+.big-footer .box:nth-of-type(2){
+  padding-left: 26px;
+  padding-right: 15px;
+}
+.big-footer .box-image a{
+  display: inline-block;
+}
+.big-footer .box-image a:nth-child(2n+1){
+  padding-right: 20px;
+}
+.big-footer .box-image a:nth-child(n+3){
+  padding-top: 16px;
+}
+.big-footer .box-image{
+  padding-left: 2px;
+}
+.big-footer .box:nth-of-type(2) .box-button{
+  padding-top: 27px;
+  padding-right: 3px;
+}
+.big-footer .box:last-of-type{
+  padding-left: 45px;
+  padding-right:0;
+}
+.big-footer .box-text{
+  padding-top: 11px;
+}
+.big-footer .box-text a {
+  font-weight: normal;
+  letter-spacing: -0px;
+  color: #ffffff;
+  }
+.big-footer .box-text span {
+  font-style: italic;
+  color: #2e91a0;
+ }
+ .big-footer .box-text p{
+   padding-bottom: 22px;
+ }
+ @-moz-document url-prefix() {
+  .big-footer .box-text{
+  padding-top: 10px;
+}
+  .big-footer .box-text a {
+    letter-spacing: -0.2px;
+    line-height: 17px;
+  }
+}
+ .big-footer .box:last-of-type .box-button{
+  padding-top: 59px;
+  padding-right: 0px;
+}
+ .small-footer {
+  width: 100%;
+  height: 67px;
+  background: url("https://preview.ibb.co/mH846n/noise_min.png"), linear-gradient(0deg, #247184, #2f92a2);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top: 1px solid #38a4b6;
+}
+.small-footer .container {
+  padding-top: 25px;
+}
+.small-footer .box{
+  display: inline-block;
+  width: 50%;
+}
+.small-footer .box:first-of-type{
+  text-align: left;
+}
+.small-footer .box:last-of-type{
+  text-align: right;
+}
+.small-footer span{
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  /* text-decoration: none; */
+  letter-spacing: 0.85px;
+}
+.small-footer .site-menu a{
+  font-size: 10px;
+  font-weight: normal;
+  /* text-decoration: none; */
+  letter-spacing: 1.15px;
+}
+.small-footer span:nth-last-child(n+2){
+  padding-right: 3px;
+}
+.small-footer span:nth-last-child(n+2)::after{
+  content: '|';
+  padding-left: 3px;
+}
+.small-footer ul{
+  vertical-align: middle;
+}
+.small-footer li {
+  display: inline-block;
+}
+.small-footer .site-menu li:nth-last-of-type(n+2) a::after {
+  content: '|';
+  padding-left:4px;
+}
+.small-footer ul li:nth-last-of-type(n+2) a{
+  padding-right: 4px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="box">
+        <h1 class="logo">
+            <a href="">SITENAME</a>
+          </h1>
+      </div>
+      <div class="box-image"></div>
+      <ul class="communications">
+        <li><a href="">digg</a></li>
+        <li><a href="">email</a></li>
+        <li><a href="">points</a></li>
+        <li><a href="">phone</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navigation">
+    <div class="container">
+      <ul class="site-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="box">
+        <span>SEARCH</span>
+        <div class="box-search">
+          <form id="nav-search" action="">
+            <label class="search-field">
+              <input type="text" name="search-string" />
+            </label>
+            <div class="box-button">
+              <button type="submit" form="data"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="featured">
+    <div class="container">
+      <div class="box">
+        <div class="box-text">
+          <h2>
+            WELCOME TO OUR SITE
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
+            accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
+            Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo
+          </p>
+        </div>
+        <div class="box-button">
+          <a class="button">LEARN MORE</a>
+          <a class="button">OUR WORK</a>
+        </div>
+      </div>
+      <div class="box">
+        <h2>You’re here: </h2>
+        <ul class="map">
+          <li>Home</li>
+          <li>Welcome<span class="cursor"></span></li>
+        </ul>
+      </div>
+      <div class="box-image"></div>
+      <div class="box-image"></div>
+    </div>
+  </section>
+  <div class="separator"> </div>
+  <section class="blog">
+    <!--div class="container"-->
+      <!-- <div class="box"> -->
+      <div class="container">
+        <h2>FROM THE BLOG</h2>
+        <div class="post">
+          <h3>Blog Post Name Here</h3>
+          <div class="info">
+            <time datetime="2010-10-15">October 15th 2010</time>
+            <p>7 comments</p>
+          </div>
+          <div class="excerpt">
+            <img src="https://image.ibb.co/ftCNRn/blog_img_map_min.jpg" alt="illustration">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
+              accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
+              Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo
+              <a href="">Continue Reading...</a>
+            </p>
+          </div>
+        </div>
+        <div class="post">
+          <h3>Blog Post Name Here</h3>
+          <div class="info">
+            <time datetime="2010-10-15">October 15th 2010</time>
+            <p>7 comments</p>
+          </div>
+          <div class="excerpt">
+            <img src="https://image.ibb.co/d4Qbmn/blog_img_masks_min.jpg" alt="illustration">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
+              accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
+              Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo
+              <a href="">Continue Reading...</a>
+            </p>
+          </div>
+        </div>
+        <div class="box-button">
+          <a class="button">THE BLOG</a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <aside>
+      <div class="back-box">
+        <div class="container">
+          <div class="box-tab">
+            <input id="tab1" type="radio" name="tab" checked="checked" />
+            <label for="tab1">Comments</label>
+            <input id="tab2" type="radio" name="tab"/>
+            <label for="tab2">Categories</label>
+            <input id="tab3" type="radio" name="tab"/>
+            <label for="tab3">Archives</label>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+              </p>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+              </p>
+            </div>
+            <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur
+                  accumsan feugiat!
+                </p>
+            </div>
+          </div>
+
+          <h2>who we are</h2>
+          <div class="excerpt">
+            <a href=""><img src="https://image.ibb.co/nJVRmn/who_we_are_img_min.jpg" alt="face"></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              accumsan feugiat...
+              <a href="">Read more!</a>
+          </p>
+          </div>
+
+          <h2>sponsors</h2>
+          <div class="sponsors">
+            <a class="box-image" href="https://www.nike.com/">
+                <img src="https://image.ibb.co/krhnWn/nike_min.png" alt="nike">
+            </a>
+            <div class="separator"></div>
+            <a class="box-image" href="http://www.adidas.com/">
+                <img src="https://image.ibb.co/dGMrmn/adidas_min.png" alt="adidas">
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!--/div-->
+  <div class="separator"> </div>
+  <footer class="big-footer">
+    <div class="container">
+      <div class="box">
+        <h2>GET A FREE QUOTE</h2>
+        <form id="quote" action="">
+          <div class="box-input">
+            <input type="text" name="first-name" placeholder="Your name" form="quote">
+            <input type="text" name="last-name" placeholder="Last Name" form="quote">
+            <textarea name="comment" placeholder="Bla Bla Bla.." form="quote"></textarea>
+            <input type="text" name="e-mail" placeholder="Your E-mail adress" form="quote">
+          </div>
+          <div class="box-button">
+            <input class="button" type="submit" value="SUBMIT" form="quote">
+          </div>
+        </form>
+      </div>
+      <div class="box">
+        <h2>OUR RECENT PROJECTS</h2>
+        <div class="box-image">
+          <a href=""><img src="https://image.ibb.co/gCvbmn/footer_img_dawn_min.jpg" alt="dawn"></a>
+          <a href=""><img src="https://image.ibb.co/giNdz7/footer_img_paints_min.jpg" alt="paints"></a>
+          <a href=""><img src="https://image.ibb.co/j2R5e7/footer_img_flowers_min.jpg" alt="flowers"></a>
+          <a href=""><img src="https://image.ibb.co/ciOU6n/footer_img_last_min.jpg" alt="abstract"></a>
+        </div>
+        <div class="box-button">
+          <a class="button">PORTFOLIO</a>
+        </div>
+      </div>
+      <div class="box">
+        <h2>TWITTER STREAM</h2>
+        <div class="box-text">
+          <p>
+            <a href="">
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+            </a>
+            <span>4 Minutes Ago..</span>
+          </p>
+          <p>
+              <a href="">
+                  Lorem ipsum dolor sit amet, consectetur
+                  accumsan feugiat!
+              </a>
+              <span>4 Minutes Ago..</span>
+          </p>
+          <p>
+            <a href="">
+                Lorem ipsum dolor sit amet, consectetur
+                accumsan feugiat!
+            </a>
+            <span>4 Minutes Ago..</span>
+          </p>
+        </div>
+        <div class="box-button">
+            <a class="button">FOLLOW US</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="small-footer">
+    <div class="container">
+      <div class="box">
+        <span>All Copyrights Reserved </span><span>2010</span><span>WebsiteName</span>
+      </div>
+      <div class="box">
+        <ul class="site-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
